@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+   <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Presupuesto APP</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+               <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 fondoPresupuesto">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="txtPresupuesto" class="form-label">Ingresa tu presupuesto:</label>
+                                              <input type="text" class="form-control" id="txtPresupuesto" aria-describedby="presupuestoHelp">
+                                              <div id="presupuestoHelp" class="form-text">Ingresa un presupuesto que no sea un número negativo</div>
+                                            </div>
+
+
+                                            <button type="button" class="btn btn-outline-success">Calcular</button>
+                                          </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 fondoGasto">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="txtNombreGasto" class="form-label">Ingresa el Nombre del Gasto:</label>
+                                              <input type="text" class="form-control" id="txtNombreGasto" aria-describedby="nombreGastoHelp">
+                                              <div id="nombreGastoHelp" class="form-text">Ingresa un nombre del gasto</div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="txtCantidadGasto" class="form-label">Ingresa la cantidad del Gasto:</label>
+                                                <input type="text" class="form-control" id="txtCantidadGasto" aria-describedby="cantidadGastoHelp">
+                                                <div id="cantidadGastoHelp" class="form-text">Ingresa una cantidad de gasto que no sea un número negativo</div>
+                                              </div>
+
+
+                                            <button type="button" class="btn btn-outline-danger">Añadir Gasto</button>
+                                          </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 fondoRegistro1">
+                                        <div class="container">
+                                         
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p>Presupuesto</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p>Gastos</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p>Saldo</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p id="parrafoPresupuesto">$0</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p id="parrafoGasto">$0</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p id="parrafoSaldo">$0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 fondoRegistro2">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <p>Gasto</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p>Valor</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <p id="parrafoDosGasto">$0</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p id="parrafoValor">$0</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div> 
+            </div>
+        </div>
+   </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
