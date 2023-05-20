@@ -1,3 +1,8 @@
+.losTitulos{
+    color:red;
+    text-align: center;
+}
+
 .fondoPresupuesto{
     background-color: #efff89;
     border: 5px solid green;
